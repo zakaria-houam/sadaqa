@@ -1,0 +1,992 @@
+{
+	"info": {
+		"_postman_id": "25841073-f0b5-4ecc-8399-73f5ff8c3316",
+		"name": "compiler toturial (POST)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "managers",
+			"item": [
+				{
+					"name": "insert manager",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 4|EGqqtsgfoX2jRNQBiiRh3goBFafMbtc1RxW6W1KR",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "eslam",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "tanta",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "eslamelbanna07@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01210732005",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "qwe",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/E:/WhatsApp Image 2021-09-25 at 1.33.08 AM.jpeg"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/managers/insert-manager",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"managers",
+								"insert-manager"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get managers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 4|EGqqtsgfoX2jRNQBiiRh3goBFafMbtc1RxW6W1KR",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/managers/get-managers",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"managers",
+								"get-managers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get manager",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 4|EGqqtsgfoX2jRNQBiiRh3goBFafMbtc1RxW6W1KR",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/managers/get-manager/1",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"managers",
+								"get-manager",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update manager",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|S6VGzThMip2x7xyLdlb79Dm133OGGsICv4FwNt2B",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ahmed\",\r\n    \"email\": \"ahmed@gmail.com\",\r\n    \"phone\": \"0123\",\r\n    \"password\": \"vbn\",\r\n    \"address\": \"cairo\",\r\n    \"gender\": \"male\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/managers/update-manager/1",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"managers",
+								"update-manager",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete manager",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|S6VGzThMip2x7xyLdlb79Dm133OGGsICv4FwNt2B",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/managers/delete-manager/1",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"managers",
+								"delete-manager",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "malls",
+			"item": [
+				{
+					"name": "insert malll",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|S6VGzThMip2x7xyLdlb79Dm133OGGsICv4FwNt2B",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "manager_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "ahmed",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "alex",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0147",
+									"type": "text"
+								},
+								{
+									"key": "space",
+									"value": "5000",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "lorem",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/E:/WhatsApp Image 2021-09-25 at 1.33.08 AM.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/malls/insert-mall",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"malls",
+								"insert-mall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get mall",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|S6VGzThMip2x7xyLdlb79Dm133OGGsICv4FwNt2B",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/malls/get-mall/6",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"malls",
+								"get-mall",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all malls",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|S6VGzThMip2x7xyLdlb79Dm133OGGsICv4FwNt2B",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/malls/get-malls",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"malls",
+								"get-malls"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update mall",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|S6VGzThMip2x7xyLdlb79Dm133OGGsICv4FwNt2B",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"mall tanta\",\r\n    \"address\": \"tanta\",\r\n    \"phone\": \"012\",\r\n    \"space\": 10000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/malls/update-mall/5",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"malls",
+								"update-mall",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete mall",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|S6VGzThMip2x7xyLdlb79Dm133OGGsICv4FwNt2B",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/malls/delete-mall/4",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"malls",
+								"delete-mall",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "departments",
+			"item": [
+				{
+					"name": "insert department",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 5|S6VGzThMip2x7xyLdlb79Dm133OGGsICv4FwNt2B",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mall_id\": 2,\r\n    \"name\": \"foods\",\r\n    \"description\": \"none\",\r\n    \"note\": \"good depart\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/departments/insert-department",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"departments",
+								"insert-department"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get department",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/departments/get-department/1",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"departments",
+								"get-department",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get departments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/departments/get-departments",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"departments",
+								"get-departments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update department",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mall_id\": 2,\r\n    \"name\": \"clothes\",\r\n    \"description\": \"this depart for clothes\",\r\n    \"note\": \"we need more clothes\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/departments/update-department/1",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"departments",
+								"update-department",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete department",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/departments/delete-department/1",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"departments",
+								"delete-department",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "vendors",
+			"item": [
+				{
+					"name": "insert vendor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "department_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "zara",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "015",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "for clothes",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "cheap",
+									"type": "text"
+								},
+								{
+									"key": "logo",
+									"type": "file",
+									"src": "/E:/WhatsApp Image 2021-09-25 at 1.33.08 AM.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/vendors/insert-vendor",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"vendors",
+								"insert-vendor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get vendor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/vendors/get-vendor/3",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"vendors",
+								"get-vendor",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get vendors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/vendors/get-vendors",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"vendors",
+								"get-vendors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update vendor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"department_id\": 2,\r\n    \"name\": \"watch\",\r\n    \"phone\": \"010\",\r\n    \"description\": \"new\",\r\n    \"note\": \"good\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/vendors/update-vendor/2",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"vendors",
+								"update-vendor",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete vendor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/vendors/delete-vendor/3",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"vendors",
+								"delete-vendor",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "insert product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "lambada",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "snacks",
+									"type": "text"
+								},
+								{
+									"key": "manufacture_company",
+									"value": "xckiu",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/E:/WhatsApp Image 2021-09-25 at 1.33.08 AM.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/products/insert-product",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"insert-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/products/get-product/2",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"get-product",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/products/get-products",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"get-products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"asd\",\r\n    \"description\": \"test\",\r\n    \"manufacture_company\": \"rttr\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/products/update-product/2",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"update-product",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/products/delete-product/3",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"delete-product",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "vendor product",
+			"item": [
+				{
+					"name": "create vendor product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vendor_id\": 5,\r\n    \"product_id\": 1,\r\n    \"price\": 100,\r\n    \"note\": \"has dicount 2%\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/vendor-product/create-vendor-product",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"vendor-product",
+								"create-vendor-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete vendor product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/vendor-product/delete-vendor-product/16",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"vendor-product",
+								"delete-vendor-product",
+								"16"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "authentication",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"eslam@elbanna.com\",\r\n    \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/login",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sign up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ahmed\",\r\n    \"email\": \"eslam2@elbanna.com\",\r\n    \"password\": \"456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://laraveltoturial.000webhostapp.com/api/register",
+							"protocol": "https",
+							"host": [
+								"laraveltoturial",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
